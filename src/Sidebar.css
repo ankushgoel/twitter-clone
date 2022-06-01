@@ -1,6 +1,14 @@
 .Sidebar {
-    width: 20%;
+    flex: 0.3;
     padding: 30px;
+    padding-top: 10px;
+    border-right: 1px solid;
+}
+
+.Sidebar-TwitterIcon {
+    color: var(--twitter-color);
+    font-size: 30px !important;
+    padding-bottom: 0 !important;
 }
 
 .Sidebar .MuiSvgIcon-root {
