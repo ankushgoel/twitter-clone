@@ -1,10 +1,10 @@
 .Feed {
     flex: 0.4;
-    /* min-width: fit-content; */
+    min-width: fit-content;
     overflow-y: scroll;
-    border-right: 1px solid;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    border-right: 1px solid var(--twitter-background);
 }
 
 /* For Chrome, safari, opera */
@@ -16,6 +16,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    opacity: 0.95;
     padding: 0px 16px;
     background-color: #fff;
     border: 1px solid var(--twitter-background);
