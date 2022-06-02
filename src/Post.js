@@ -7,19 +7,19 @@ import RepeatIcon from "@mui/icons-material/Repeat";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import IosShareIcon from '@mui/icons-material/IosShare';
 
-function Post({displayName, username, verified, text, image, avatar}) {
+function Post({avatar, displayName, username, verified, text, image}) {
   return (
     <div className='Post'>
         <div className="Post-Avatar">
-            <Avatar src=''></Avatar>
+            <Avatar src={avatar}></Avatar>
         </div>
         <div className="Post-Body">
             <div className="Post-Header">
                 <div className="Post-HeaderText">
                     <h3>
-                        <span className='Post-AccountName'>Name </span>
-                        <VerifiedIcon className='Post-VerifiedBadge'/>
-                        <span className='Post-Username'>@username</span>
+                        <span className='Post-DisplayName'>{displayName} </span>
+                        {verified && <VerifiedIcon className='Post-VerifiedBadge'/>}
+                        <span className='Post-Username'>@{username}</span>
                     </h3>
                 </div>
                 <div className="Header-Description">
@@ -27,10 +27,11 @@ function Post({displayName, username, verified, text, image, avatar}) {
                 </div>
             </div>
             <div className="PostText">
-                <span>Tweet your thoughts with #hashtags</span>
+                <span>{text}</span>
+                {/* <span>Tweet your thoughts with #hashtags</span> */}
             </div>
             <div className="PostMedia">
-                <img src="https://pbs.twimg.com/media/FUPS5vtWQAAW4eI?format=jpg&name=large" alt="" />
+                <img src={image} alt="" />
             </div>
             <div className="PostFooter">
                 <ChatBubbleOutlineIcon fontSize="small" />
