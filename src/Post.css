@@ -1,0 +1,45 @@
+.Post {
+    display: flex;
+    padding: 12px 16px;
+    border-bottom: 1px solid;
+}
+
+.Post-Body {
+    padding-left: 12px;
+}
+
+.Post-HeaderText > h3 {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.Post-VerifiedBadge {
+    font-size: inherit !important;
+    margin: 0 2px;
+    color: var(--twitter-color);
+}
+
+.Post-AccountName{
+    font-size: 16px;
+}
+.Post-Username {
+    font-size: 14px;
+    color: gray;
+}
+
+.PostText {
+    margin: 4px 0 10px;
+}
+
+.PostMedia > img {
+    border-radius: 20px;
+    max-width: 500px;
+}
+
+.PostFooter {
+    display: flex;
+    justify-content: space-between;
+    max-width: 425px;
+    margin-top: 12px;
+}
