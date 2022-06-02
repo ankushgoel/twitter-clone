@@ -1,3 +1,27 @@
 .Feed {
     flex: 0.4;
+    /* min-width: fit-content; */
+    overflow-y: scroll;
+    border-right: 1px solid;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* For Chrome, safari, opera */
+.Feed::-webkit-scrollbar {
+    display: none;
+}
+
+.Feed-Header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 1px solid var(--twitter-background);
+}
+
+.Feed-Header > h2{
+    font-size: 20px;
+    font-weight: 800;
 }
