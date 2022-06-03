@@ -1,4 +1,4 @@
-# Twitter Clone with React 18 & MaterialUI MUI 5
+# Twitter Clone with React 18, MaterialUI (MUI) 5 & Firebase 9
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
